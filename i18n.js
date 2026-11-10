@@ -16,7 +16,7 @@
       "hero.title": "Расписание вашей группы — <em>на одном экране</em>",
       "hero.lead":
         "Приложение читает открытые файлы Новочебоксарского химико-механического техникума и показывает день выбранной группы: пара, время, предмет, кабинет и преподаватель. Замены с сайта подсвечиваются в той же карточке.",
-      "hero.start": "Как запустить",
+      "hero.download": "Скачать для Android",
       "hero.screens": "Посмотреть экраны",
       "hero.meta1": "Версия 2.0.0",
       "hero.meta2": "Копия остаётся на устройстве",
@@ -123,10 +123,11 @@
         "Компьютер и телефон в одной сети Wi‑Fi. В окне сервера будет адрес вида http://192.168.x.x:4173. Его открывают в браузере телефона и ставят значок через «На главный экран».",
       "cta.title": "Пары группы на экране телефона",
       "cta.text":
-        "Запустите папку приложения на компьютере, выберите группу и откройте тот же адрес с телефона. Расписание берётся с сайта техникума, копия остаётся в браузере.",
-      "cta.start": "Как запустить",
+        "Скачайте релиз для Android и выберите группу. Расписание берётся с сайта техникума, копия остаётся на устройстве.",
+      "cta.download": "Скачать .apk",
       "cta.site": "Страница расписания",
       "footer.note": "Неофициальное приложение. Расписание и замены читаются с открытых файлов техникума.",
+      "footer.releases": "Releases",
       "footer.schedule": "Расписание nhmt.ru",
     },
     en: {
@@ -142,7 +143,7 @@
       "hero.title": "Your group's schedule — <em>on one screen</em>",
       "hero.lead":
         "The app reads the public files of Novocheboksarsk Chemical-Mechanical College and shows the selected group's day: period, time, subject, room, and teacher. Substitutions from the college site are highlighted on the same card.",
-      "hero.start": "How to run",
+      "hero.download": "Download for Android",
       "hero.screens": "See the screens",
       "hero.meta1": "Version 2.0.0",
       "hero.meta2": "The copy stays on the device",
@@ -250,10 +251,11 @@
         "Keep the computer and the phone on the same Wi-Fi. The server window prints an address like http://192.168.x.x:4173. Open it in the phone browser, then use Add to Home Screen.",
       "cta.title": "The group's lessons on a phone screen",
       "cta.text":
-        "Run the app folder on a computer, pick the group, and open the same address from a phone. The schedule comes from the college site, and the copy stays in the browser.",
-      "cta.start": "How to run",
+        "Download the Android release and pick your group. The schedule comes from the college site, and the copy stays on the device.",
+      "cta.download": "Download .apk",
       "cta.site": "Schedule page",
       "footer.note": "Unofficial app. The schedule and substitutions are read from the college's public files.",
+      "footer.releases": "Releases",
       "footer.schedule": "Schedule on nhmt.ru",
     },
   };
