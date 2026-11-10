@@ -1,38 +1,40 @@
-# Расписание НХМТ — сайт
+# Расписание НХМТ — Website
 
-Лендинг для **Расписание НХМТ** — локального приложения с днём вашей группы, заменами и практикой.
+Official landing page for **Расписание НХМТ** — a local schedule for Новочебоксарский химико-механический техникум.
 
 **by St1c1n**
 
-Приложение читает открытые файлы Новочебоксарского химико-механического техникума. Это не официальный клиент колледжа.
-
-## Ссылки
+## Links
 
 | | URL |
 |---|-----|
-| Страница расписания | https://nhmt.ru/student/raspisanie-zanyatiy/ |
-| Автор | https://github.com/St1c1nOfficial |
+| 🌐 **Website** | https://st1c1nofficial.github.io/NHMT24_site/ |
+| 📦 Website repository | https://github.com/St1c1nOfficial/NHMT24_site |
+| 💻 App source code | https://github.com/St1c1nOfficial/NHMT24 |
+| ⬇️ Download `.apk` | https://github.com/St1c1nOfficial/NHMT24/releases |
+| 📄 College schedule | https://nhmt.ru/student/raspisanie-zanyatiy/ |
 
-Отдельного репозитория приложения и страницы GitHub Pages пока нет. Когда сайт будет опубликован, адрес будет вида `https://st1c1nofficial.github.io/NHMT24_site/`.
+> GitHub account: **[St1c1nOfficial](https://github.com/St1c1nOfficial)**  
+> Brand / author: **St1c1n**
 
-## О приложении
+## About the app
 
-- Версия 2.0.0
-- Корпус 1–2 и корпус 3, своя группа
-- День: пара, время, предмет, кабинет, преподаватель, подгруппы
-- Замены с zamena.nhmt.ru и свои замены
-- Практика, светлая и тёмная тема, уведомление об обновлении файла
-- Значок на главный экран
-- Запуск: `Запуск.bat` и Python 3, страница `http://127.0.0.1:4173`
+Расписание НХМТ shows one group's day: pair, time, subject, room, and teacher. Replacements from the college site sit on the same card. This is not an official college client.
 
-## Состав
+- Android `.apk`, version 2.0.0
+- Campuses 1–2 and 3
+- Replacements, practice, light and dark theme
+- Data stays on the device
+
+## Repository structure
 
 ```
-├── index.html      # страница
-├── styles.css      # стили
-├── i18n.js         # переключатель RU / EN
-├── assets/         # логотип и скрины
+├── index.html      # Main page
+├── styles.css      # Styles
+├── i18n.js         # RU/EN language switcher
+├── assets/         # Logo and screenshots
 │   ├── logo.png
+│   ├── logo-source.png
 │   ├── day.png
 │   ├── today.png
 │   ├── settings.png
@@ -40,14 +42,33 @@
 └── README.md
 ```
 
-`assets/logo-source.png` — исходный логотип 1890×1890. На странице используется уменьшенная копия `logo.png`.
+`assets/logo-source.png` is the original 1890×1890 mark. The page uses `logo.png`.
 
-## Локальный просмотр
+## Local preview
 
-Откройте `index.html` в браузере или поднимите сервер:
+Open `index.html` in a browser or start a simple server:
 
 ```bash
+# Python
 python -m http.server 8080
+
+# Node
+npx serve .
 ```
 
-Затем откройте http://localhost:8080
+Then open: http://localhost:8080
+
+## GitHub Pages
+
+Pages are already enabled.
+
+- **Branch:** `main`
+- **Folder:** `/ (root)`
+- **URL:** https://st1c1nofficial.github.io/NHMT24_site/
+
+If the site has not updated yet — wait 1–2 minutes or hard-refresh with Ctrl+F5.
+
+## License
+
+Website content is for the Расписание НХМТ project.  
+App license: see the [license in the main repository](https://github.com/St1c1nOfficial/NHMT24).
