@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Расписание НХМТ — пары вашей группы</title>
+  <meta name="description" content="Расписание НХМТ показывает день вашей группы: пары, кабинет, преподаватель и замены. Данные остаются на устройстве. by St1c1n." />
+  <meta name="theme-color" content="#10151f" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="" width="36" height="36" />
+      <div>
+        <strong>НХМТ</strong>
+        <small>Расписание · by St1c1n</small>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="#why" data-i18n="nav.why">Зачем</a>
+      <a href="#screens" data-i18n="nav.screens">Экраны</a>
+      <a href="#better" data-i18n="nav.better">Удобнее</a>
+      <a href="#start" data-i18n="nav.start">Запуск</a>
+      <div class="lang-switch" data-lang-switcher role="group" aria-label="Language">
+        <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-sm btn-ghost" href="https://nhmt.ru/student/raspisanie-zanyatiy/" target="_blank" rel="noopener" data-i18n="nav.site">Сайт НХМТ</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Корпуса 1–2 и 3 · Телефон и компьютер</p>
+        <h1 data-i18n="hero.title" data-i18n-html>Расписание вашей группы — <em>на одном экране</em></h1>
+        <p class="lead" data-i18n="hero.lead">
+          Приложение читает открытые файлы Новочебоксарского химико-механического техникума
+          и показывает день выбранной группы: пара, время, предмет, кабинет и преподаватель.
+          Замены с сайта подсвечиваются в той же карточке.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#start" data-i18n="hero.start">Как запустить</a>
+          <a class="btn btn-ghost" href="#screens" data-i18n="hero.screens">Посмотреть экраны</a>
+        </div>
+        <ul class="hero-meta">
+          <li data-i18n="hero.meta1">Версия 2.0.0</li>
+          <li data-i18n="hero.meta2">Копия остаётся на устройстве</li>
+          <li data-i18n="hero.meta3">Светлая и тёмная тема</li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <div class="shot-frame">
+          <img src="assets/today.png" alt="День с тремя заменами" data-i18n-alt="hero.shotAlt" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="section-head">
+        <h2 data-i18n="why.title">Для чего это</h2>
+        <p data-i18n="why.lead">Файл расписания на сайте техникума — таблица всего корпуса. Здесь остаётся только ваша группа и сегодняшний день.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="icon">1</div>
+          <h3 data-i18n="why.card1.title">Своя группа</h3>
+          <p data-i18n="why.card1.text">Корпус 1–2 или корпус 3, короткое имя и код. Неделя листается на прошлую и следующую. Если в ячейке две подгруппы, они показаны отдельно.</p>
+        </article>
+        <article class="card">
+          <div class="icon">2</div>
+          <h3 data-i18n="why.card2.title">Замены в дне</h3>
+          <p data-i18n="why.card2.text">Лист с zamena.nhmt.ru попадает в карточку пары: значок «Замена» и строка «Вместо». Практика выносится отдельно. Свою замену можно добавить вручную.</p>
+        </article>
+        <article class="card">
+          <div class="icon">3</div>
+          <h3 data-i18n="why.card3.title">На этом устройстве</h3>
+          <p data-i18n="why.card3.text">Без аккаунта. Группа, расписание и замены хранятся в браузере. Если сети нет, показывается сохранённая копия. Уведомление приходит, когда файл на сайте обновился.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="screens">
+      <div class="section-head">
+        <h2 data-i18n="screens.title">Как это выглядит</h2>
+        <p data-i18n="screens.lead">Четыре экрана версии 2.0.0. Интерфейс приложения на русском.</p>
+      </div>
+      <div class="shot-grid">
+        <figure class="shot">
+          <div class="shot-frame">
+            <img src="assets/day.png" alt="Суббота, три пары без замен" data-i18n-alt="screens.day.alt" />
+          </div>
+          <figcaption data-i18n="screens.day.cap">День группы: время, предмет, кабинет, преподаватель</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot-frame">
+            <img src="assets/today.png" alt="Четверг с баннером замен" data-i18n-alt="screens.today.alt" />
+          </div>
+          <figcaption data-i18n="screens.today.cap">Замены подсвечены, у пары видно, что было вместо</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot-frame">
+            <img src="assets/settings.png" alt="Экран настроек" data-i18n-alt="screens.settings.alt" />
+          </div>
+          <figcaption data-i18n="screens.settings.cap">Тема, автообновление, свой xlsx и значок на экран</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot-frame">
+            <img src="assets/setup.png" alt="Выбор корпуса и группы" data-i18n-alt="screens.setup.alt" />
+          </div>
+          <figcaption data-i18n="screens.setup.cap">Первый запуск: корпус и группа</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="better">
+      <div class="section-head">
+        <h2 data-i18n="better.title">Чем это удобнее файла</h2>
+        <p data-i18n="better.lead">Сравниваем не «с другим колледжем», а с тем, как пару ищут сейчас: в xlsx на nhmt.ru и в листе замен.</p>
+      </div>
+      <div class="compare-table wrap">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th data-i18n="table.h.xlsx">Файл на nhmt.ru</th>
+              <th data-i18n="table.h.zamena">Лист замен</th>
+              <th class="hl" data-i18n="table.h.app">Расписание НХМТ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="table.r1.label">Что открывается</td>
+              <td data-i18n="table.r1.xlsx">Таблица всего корпуса</td>
+              <td data-i18n="table.r1.zamena">Все группы одним листом</td>
+              <td class="hl" data-i18n="table.r1.app">День вашей группы</td>
+            </tr>
+            <tr>
+              <td data-i18n="table.r2.label">Замены</td>
+              <td data-i18n="table.r2.xlsx">Отдельным файлом</td>
+              <td data-i18n="table.r2.zamena">Нужно найти свою строку</td>
+              <td class="hl" data-i18n="table.r2.app">В карточке пары, со строкой «Вместо»</td>
+            </tr>
+            <tr>
+              <td data-i18n="table.r3.label">Практика</td>
+              <td data-i18n="table.r3.xlsx">В общем файле замен</td>
+              <td data-i18n="table.r3.zamena">Среди остальных строк</td>
+              <td class="hl" data-i18n="table.r3.app">Баннер и отдельная карточка</td>
+            </tr>
+            <tr>
+              <td data-i18n="table.r4.label">Телефон</td>
+              <td data-i18n="table.r4.xlsx">Широкая таблица</td>
+              <td data-i18n="table.r4.zamena">Широкая таблица</td>
+              <td class="hl" data-i18n="table.r4.app">Экран дня и значок на главном</td>
+            </tr>
+            <tr>
+              <td data-i18n="table.r5.label">Без сети</td>
+              <td data-i18n="table.r5.xlsx">Файл нужно скачать заранее</td>
+              <td data-i18n="table.r5.zamena">Файл нужно скачать заранее</td>
+              <td class="hl" data-i18n="table.r5.app">Показывается сохранённая копия</td>
+            </tr>
+            <tr>
+              <td data-i18n="table.r6.label">Обновление</td>
+              <td data-i18n="table.r6.xlsx">Скачать xlsx снова</td>
+              <td data-i18n="table.r6.zamena">Открыть новый лист</td>
+              <td class="hl" data-i18n="table.r6.app">При открытии, по часам и кнопкой «Проверить сейчас»</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section alt" id="use">
+      <div class="section-head">
+        <h2 data-i18n="use.title">Где упрощает день</h2>
+        <p data-i18n="use.lead">Реальные сценарии в техникуме: утро перед парами, день с заменой, практика и телефон в той же Wi‑Fi.</p>
+      </div>
+      <div class="use-grid">
+        <article class="use-card">
+          <h3 data-i18n="use.card1.title">Утро перед парами</h3>
+          <p data-i18n="use.card1.text">Открыли «Сегодня» — видны номер пары, время, кабинет и преподаватель. Листать неделю можно на одну назад и на одну вперёд.</p>
+        </article>
+        <article class="use-card">
+          <h3 data-i18n="use.card2.title">День, когда вышла замена</h3>
+          <p data-i18n="use.card2.text">Баннер говорит, сколько замен на этот день. После «Заменить расписание» пара остаётся со значком, а строка «Вместо» показывает, что стояло в сетке.</p>
+        </article>
+        <article class="use-card">
+          <h3 data-i18n="use.card3.title">Практика</h3>
+          <p data-i18n="use.card3.text">Если группа на практике, это отдельная карточка со сроком, а не строка, которую надо вычитать из общего листа.</p>
+        </article>
+        <article class="use-card">
+          <h3 data-i18n="use.card4.title">Свой телефон в техникуме</h3>
+          <p data-i18n="use.card4.text">Пока на компьютере открыт «Запуск.bat», телефон в той же сети Wi‑Fi открывает адрес из окна сервера. В настройках есть «На главный экран».</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="compare">
+      <div class="section-head">
+        <h2 data-i18n="compare.title">Что уже есть без приложения</h2>
+        <p data-i18n="compare.lead">Техникум и так публикует расписание. Приложение не заменяет сайт, а читает те же файлы.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card wide">
+          <h3 data-i18n="compare.similar.title">Обычные способы</h3>
+          <ul class="bullets">
+            <li data-i18n="compare.similar.li1" data-i18n-html><strong>xlsx на nhmt.ru</strong> — полное расписание корпуса. На телефоне это широкая таблица всех групп.</li>
+            <li data-i18n="compare.similar.li2" data-i18n-html><strong>Лист на zamena.nhmt.ru</strong> — замены и практика на дату. Свою строку нужно найти среди остальных.</li>
+            <li data-i18n="compare.similar.li3" data-i18n-html><strong>Сообщение в группе</strong> — быстро, но легко разойтись с файлом и пропустить пару.</li>
+            <li data-i18n="compare.similar.li4" data-i18n-html><strong>Свой скачанный xlsx</strong> — работает, если сайт не отдал файл браузеру. В приложении для этого есть «Открыть файл .xlsx».</li>
+          </ul>
+        </article>
+        <article class="card wide accent-card">
+          <h3 data-i18n="compare.place.title">Место этого приложения</h3>
+          <p data-i18n="compare.place.text" data-i18n-html>
+            Если нужен не второй просмотр Excel, а
+            <strong>одна группа на один день</strong> — экран собирает сетку, замены и практику вместе.
+          </p>
+          <ul class="bullets">
+            <li data-i18n="compare.place.li1">Корпус 1–2 и корпус 3, группа меняется в настройках</li>
+            <li data-i18n="compare.place.li2">Автообновление при открытии и около 9:00, 12:00, 14:00, 16:00, 18:00</li>
+            <li data-i18n="compare.place.li3">Своя замена: дата, пара, предмет, преподаватель, аудитория</li>
+            <li data-i18n="compare.place.li4">«Начать сначала» стирает группу, расписание и замены только на этом устройстве</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="start">
+      <div class="section-head">
+        <h2 data-i18n="start.title">Как запустить</h2>
+        <p data-i18n="start.lead">Это локальное приложение. Отдельного установщика нет: на компьютере нужен Python 3 и файл «Запуск.bat» из папки программы.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="icon">1</span>
+          <div>
+            <h3 data-i18n="start.s1.title">Python 3</h3>
+            <p data-i18n="start.s1.text">Если Python не установлен, «Запуск.bat» напишет об этом и остановится.</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">2</span>
+          <div>
+            <h3 data-i18n="start.s2.title">Запуск.bat</h3>
+            <p data-i18n="start.s2.text">Откройте папку приложения и запустите этот файл. Окно сервера не закрывайте. Остановка — Ctrl+C.</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">3</span>
+          <div>
+            <h3 data-i18n="start.s3.title">Браузер</h3>
+            <p data-i18n="start.s3.text">Страница откроется сама: http://127.0.0.1:4173. Файл index.html напрямую браузер не поднимет как приложение.</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">4</span>
+          <div>
+            <h3 data-i18n="start.s4.title">Корпус и группа</h3>
+            <p data-i18n="start.s4.text">Выберите корпус 1–2 или корпус 3 и свою группу. Потом это меняется в «Настройках».</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">5</span>
+          <div>
+            <h3 data-i18n="start.s5.title">Телефон</h3>
+            <p data-i18n="start.s5.text">Компьютер и телефон в одной сети Wi‑Fi. В окне сервера будет адрес вида http://192.168.x.x:4173. Его открывают в браузере телефона и ставят значок через «На главный экран».</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section cta-block">
+      <div class="cta-inner">
+        <img src="assets/logo.png" alt="" width="56" height="56" />
+        <h2 data-i18n="cta.title">Пары группы на экране телефона</h2>
+        <p data-i18n="cta.text">Запустите папку приложения на компьютере, выберите группу и откройте тот же адрес с телефона. Расписание берётся с сайта техникума, копия остаётся в браузере.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#start" data-i18n="cta.start">Как запустить</a>
+          <a class="btn btn-ghost" href="https://nhmt.ru/student/raspisanie-zanyatiy/" target="_blank" rel="noopener" data-i18n="cta.site">Страница расписания</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Расписание НХМТ</strong> · by St1c1n
+      <p class="disclaimer" data-i18n="footer.note">Неофициальное приложение. Расписание и замены читаются с открытых файлов техникума.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://nhmt.ru/student/raspisanie-zanyatiy/" target="_blank" rel="noopener" data-i18n="footer.schedule">Расписание nhmt.ru</a>
+      <a href="https://github.com/St1c1nOfficial" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>
